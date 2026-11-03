@@ -1,63 +1,656 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html dir="rtl" lang="ar">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<title>نيو كود — كل منتج بيبدأ بسطر واحد</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800&amp;family=JetBrains+Mono:wght@400&amp;display=swap&amp;family=Montserrat:wght@500;700;800" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" id="bs" rel="stylesheet"/><link href="css/style.css" rel="stylesheet"/></head>
-<body>
-<div class="ctl"><button class="btn btn-sm btn-outline-light" id="lb" type="button">EN</button><button aria-pressed="false" class="btn btn-sm btn-outline-light nudge" id="sb" type="button">♪ <span>موسيقى</span></button></div><div class="top" id="bar"></div>
-<nav aria-label="الفصول" class="side-nav" id="nav"></nav>
-<header data-t="البداية" id="hero">
-<div class="stick"><div aria-hidden="true" class="fg"><span style="--x:6%;--y:16%;--d:-0.0s">{ }</span><span style="--x:82%;--y:12%;--d:-0.9s">&lt;/&gt;</span><span style="--x:14%;--y:70%;--d:-1.8s">#</span><span style="--x:88%;--y:66%;--d:-2.7s">( )</span><span style="--x:46%;--y:8%;--d:-3.6s">=&gt;</span><span style="--x:30%;--y:86%;--d:-4.5s">[ ]</span><span style="--x:70%;--y:88%;--d:-5.4s">;</span><span style="--x:92%;--y:40%;--d:-6.3s">&amp;&amp;</span></div>
-<svg aria-label="شعار نيو كود" role="img" viewbox="0 0 400 200">
-<g id="mk"><path d="M40 170V30L110 170V30" fill="none" stroke="#F5F7FA" stroke-linejoin="miter" stroke-width="22"></path>
-<circle cx="250" cy="100" fill="none" id="cc" r="70" stroke="#FFB000" stroke-width="22"></circle>
-<text class="mono" direction="ltr" fill="#FFB000" font-size="34" id="tg" style="font-family:'JetBrains Mono',monospace" text-anchor="middle" x="250" y="112">&lt;/&gt;</text></g></svg>
-<div class="say"><div class="on" data-i18n="say0"><b>كل منتج</b> بيبدأ بسطر واحد.</div><div data-i18n="say1">ده مش مجرد شعار.<br/><b>ده باب.</b></div><div data-i18n="say2">تعالَ نحكي لك <b>الحكاية.</b></div></div>
-<div class="hint" data-i18n="hint">اسحب لتبدأ الحكاية ↓</div>
-</div></header><div aria-hidden="true" class="mq"><div class="mq-t" data-i18n="mq">فكرة ✦ تصميم ✦ كود ✦ إبداع ✦ منتج ✦ فكرة ✦ تصميم ✦ كود ✦ إبداع ✦ منتج ✦ فكرة ✦ تصميم ✦ كود ✦ إبداع ✦ منتج ✦ فكرة ✦ تصميم ✦ كود ✦ إبداع ✦ منتج ✦ فكرة ✦ تصميم ✦ كود ✦ إبداع ✦ منتج ✦ فكرة ✦ تصميم ✦ كود ✦ إبداع ✦ منتج ✦ </div></div>
-<main>
-<section class="ch ph-w" data-t="نحن مين" id="about"><div class="row align-items-center g-4"><div class="col-lg-7 d-flex flex-column gap-3"><div class="k mono rv">01 / WHO</div><h2 class="rv" data-i18n="about.h">قبل الكود، فيه ناس.</h2><p class="lead rv" data-i18n="about.l">نيو كود فريق مهندسين ومصممين [سنة التأسيس] بنكتب برمجيات بتحل مشكلة حقيقية. رسالتنا: [رسالة الشركة في سطر واحد].</p></div><div class="col-lg-5"><figure class="art rv"><svg aria-label="فريق متصل" role="img" viewbox="0 0 400 320"><g class="sp" style="transform-origin:200px 160px"><path class="dr" d="M200 160L90 70M200 160L320 80M200 160L70 240M200 160L330 250M200 160L200 40M200 160L200 285" fill="none" stroke="#F5F7FA" stroke-width="2"></path><g fill="#1B2A47" stroke="#FFB000" stroke-width="3"><circle cx="90" cy="70" r="20"></circle><circle cx="320" cy="80" r="16"></circle><circle cx="70" cy="240" r="16"></circle><circle cx="330" cy="250" r="22"></circle><circle cx="200" cy="40" r="14"></circle><circle cx="200" cy="285" r="18"></circle></g></g><circle cx="200" cy="160" fill="#FFB000" r="46"></circle><text fill="#0A0F1E" font-family="JetBrains Mono,monospace" font-size="34" font-weight="800" text-anchor="middle" x="200" y="173">NC</text></svg></figure></div></div>
-<div class="row g-3" id="team"></div></section>
-<section class="ch ph-w" data-t="ثقافتنا" id="culture"><div class="row align-items-center g-4"><div class="col-lg-7 d-flex flex-column gap-3"><div class="k mono rv">02 / CULTURE</div><h2 class="rv" data-i18n="culture.h">إحنا بنشتغل إزاي مع بعض؟</h2></div><div class="col-lg-5"><figure class="art rv"><svg aria-label="فكرة" role="img" viewbox="0 0 400 320"><g class="pu" stroke="#FFB000" stroke-linecap="round" stroke-width="4"><path d="M200 14v28M92 56l20 20M308 56l-20 20M56 150h30M314 150h30"></path></g><path class="dr" d="M200 70c-52 0-84 36-84 80 0 30 16 48 34 66 8 8 12 18 12 30h76c0-12 4-22 12-30 18-18 34-36 34-66 0-44-32-80-84-80z" fill="none" stroke="#F5F7FA" stroke-width="4"></path><rect fill="#2a3d66" height="12" rx="6" width="72" x="164" y="250"></rect><rect fill="#2a3d66" height="12" rx="6" width="56" x="172" y="270"></rect><text class="fl" fill="#FFB000" font-family="JetBrains Mono,monospace" font-size="54" font-weight="800" text-anchor="middle" x="200" y="168">&lt;/&gt;</text></svg></figure></div></div>
-<div class="row g-3">
-<div class="col-12 col-sm-6 col-lg-3"><div class="nc-card rv"><h3 class="mono" data-i18n="culture.c0h">// نختبر قبل ما نسلّم</h3><p data-i18n="culture.c0p">مفيش حاجة توصل للعميل إلا بعد ما نكسرها إحنا الأول.</p></div></div>
-<div class="col-12 col-sm-6 col-lg-3"><div class="nc-card rv"><h3 class="mono" data-i18n="culture.c1h">// الصراحة أول</h3><p data-i18n="culture.c1p">لو فيه مشكلة، العميل يعرفها منا قبل ما يكتشفها.</p></div></div>
-<div class="col-12 col-sm-6 col-lg-3"><div class="nc-card rv"><h3 class="mono" data-i18n="culture.c2h">// نتعلم كل يوم</h3><p data-i18n="culture.c2p">ساعة أسبوعياً لتجربة تقنية جديدة بدون ضغط تسليم.</p></div></div>
-<div class="col-12 col-sm-6 col-lg-3"><div class="nc-card rv"><h3 class="mono" data-i18n="culture.c3h">// الكود بيتراجع</h3><p data-i18n="culture.c3p">كل سطر يتراجع عليه زميل قبل الدمج. مفيش بطل واحد.</p></div></div></div></section>
-<section class="ch ph-c" data-t="كيف نعمل" id="process"><div class="row align-items-center g-4"><div class="col-lg-7 d-flex flex-column gap-3"><div class="k mono rv">03 / PROCESS</div><h2 class="rv" data-i18n="process.h">كل مشروع بيعدي بنفس الطريق.</h2></div><div class="col-lg-5"><figure class="art rv"><svg aria-label="رحلة" role="img" viewbox="0 0 400 320"><path d="M30 270C100 270 90 120 170 140S250 260 300 150 340 70 360 60" fill="none" stroke="#FFB000" stroke-dasharray="8 10" stroke-width="3"></path><g fill="#F5F7FA"><circle cx="30" cy="270" r="9"></circle><circle cx="90" cy="200" r="9"></circle><circle cx="170" cy="140" r="9"></circle><circle cx="240" cy="228" r="9"></circle></g><circle cx="300" cy="150" fill="#FFB000" r="9"></circle><g class="fl"><path d="M335 78L395 38L368 100L354 82Z" fill="#F5F7FA"></path><path d="M354 82L395 38" stroke="#0A0F1E" stroke-width="2"></path></g></svg></figure></div></div>
-<div class="tl" id="tl"></div></section>
-<section class="ch ph-c" data-t="خدماتنا" id="services"><div class="row align-items-center g-4"><div class="col-lg-7 d-flex flex-column gap-3"><div class="k mono rv">04 / SERVICES</div><h2 class="rv" data-i18n="services.h">وده اللي نقدر نبنيه لك.</h2></div><div class="col-lg-5"><figure class="art rv"><svg aria-label="مكعبات" role="img" viewbox="0 0 400 320"><defs><g id="cb"><polygon fill="#FFB000" points="0,0 40,20 0,40 -40,20"></polygon><polygon fill="#1B2A47" points="-40,20 0,40 0,85 -40,65"></polygon><polygon fill="#2a3d66" points="40,20 0,40 0,85 40,65"></polygon></g></defs><use class="fl" href="#cb" x="110" y="170"></use><use class="fl" href="#cb" style="animation-delay:-1.6s" x="200" y="120"></use><use class="fl" href="#cb" style="animation-delay:-3.2s" x="290" y="70"></use><text class="pu" fill="#F5F7FA" font-family="JetBrains Mono,monospace" font-size="36" text-anchor="middle" x="200" y="40">&lt;/&gt;</text></svg></figure></div></div>
-<div class="row g-4 align-items-center"><div class="col-lg-6"><div class="term mono rv" data-type="1" id="term"></div></div><div class="col-lg-6"><div class="row g-3" id="svc"></div></div></div></section>
-<section class="ch ph-p" data-t="خبرتنا" id="exp"><div class="row align-items-center g-4"><div class="col-lg-7 d-flex flex-column gap-3"><div class="k mono rv">05 / EXPERTISE</div><h2 class="rv" data-i18n="exp.h">الأرقام اللي بتتكلم.</h2></div><div class="col-lg-5"><figure class="art rv"><svg aria-label="مدارات" role="img" viewbox="0 0 400 320"><g class="sp" fill="none" stroke="#2a3d66" stroke-width="2" style="transform-origin:200px 160px"><ellipse cx="200" cy="160" rx="150" ry="55"></ellipse><ellipse cx="200" cy="160" rx="150" ry="55" transform="rotate(60 200 160)"></ellipse><ellipse cx="200" cy="160" rx="150" ry="55" transform="rotate(-60 200 160)"></ellipse><circle cx="350" cy="160" fill="#FFB000" r="9" stroke="none"></circle><circle cx="125" cy="30" fill="#F5F7FA" r="9" stroke="none" transform="rotate(0)"></circle><circle cx="125" cy="290" fill="#FFB000" r="9" stroke="none"></circle></g><circle cx="200" cy="160" fill="#FFB000" r="26"></circle></svg></figure></div></div>
-<div class="row g-3">
-<div class="col-12 col-sm-6 col-lg-3"><div class="nc-card rv"><div class="num mono" data-n="48">0</div><p data-i18n="exp.p0">مشروع تم تسليمه</p></div></div>
-<div class="col-12 col-sm-6 col-lg-3"><div class="nc-card rv"><div class="num mono" data-n="6">0</div><p data-i18n="exp.p1">سنوات خبرة</p></div></div>
-<div class="col-12 col-sm-6 col-lg-3"><div class="nc-card rv"><div class="num mono" data-n="25">0</div><p data-i18n="exp.p2">مهندس ومصمم</p></div></div>
-<div class="col-12 col-sm-6 col-lg-3"><div class="nc-card rv"><div class="num mono" data-n="97">0</div><p data-i18n="exp.p3">% عملاء كرروا التعامل</p></div></div></div>
-<div class="chips rv mono mt-2"><span>Flutter</span><span>React</span><span>Node.js</span><span>Python</span><span>PostgreSQL</span><span>AWS</span><span>Figma</span></div></section>
-<section class="ch ph-p" data-t="عملاؤنا" id="clients"><div class="row align-items-center g-4"><div class="col-lg-7 d-flex flex-column gap-3"><div class="k mono rv">06 / CLIENTS</div><h2 class="rv" data-i18n="clients.h">ناس وثقت فينا.</h2></div><div class="col-lg-5"><figure class="art rv"><svg aria-label="ثقة" role="img" viewbox="0 0 400 320"><circle cx="160" cy="160" fill="#FFB000" fill-opacity=".15" r="86" stroke="#FFB000" stroke-width="4"></circle><circle cx="240" cy="160" fill="#F5F7FA" fill-opacity=".1" r="86" stroke="#F5F7FA" stroke-width="4"></circle><path class="dr" d="M176 162l20 20 34-42" fill="none" stroke="#F5F7FA" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></path><circle class="fl" cx="60" cy="60" fill="#FFB000" r="8"></circle><circle class="fl" cx="345" cy="265" fill="#F5F7FA" r="12" style="animation-delay:-2s"></circle></svg></figure></div></div>
-<div class="net rv" id="net"></div>
-<div class="row g-3"><div class="col-12 col-md-6"><div class="nc-card rv"><p data-i18n="clients.q0">“[اقتباس من عميل عن جودة التسليم والتواصل].”</p><h3 data-i18n="clients.n0" style="margin-top:12px;font-size:15px">[اسم العميل] — [المنصب]</h3></div></div>
-<div class="col-12 col-md-6"><div class="nc-card rv"><p data-i18n="clients.q1">“[اقتباس ثانٍ عن الأثر على نشاط العميل].”</p><h3 data-i18n="clients.n1" style="margin-top:12px;font-size:15px">[اسم العميل] — [المنصب]</h3></div></div></div></section>
-<section class="ch ph-p" data-t="الأكاديمية" id="acad"><div class="row align-items-center g-4"><div class="col-lg-7 d-flex flex-column gap-3"><div class="k mono rv">07 / ACADEMY</div><h2 class="rv" data-i18n="acad.h">ومش بنبني منتجات بس. <span style="color:var(--am)">بنبني مبرمجين.</span></h2></div><div class="col-lg-5"><figure class="art rv"><svg aria-label="تخرج" role="img" viewbox="0 0 400 320"><g class="fl"><path d="M112 150v58c0 22 176 22 176 0v-58l-88 36z" fill="#1B2A47" stroke="#2a3d66" stroke-width="3"></path><polygon fill="#FFB000" points="200,70 345,125 200,182 55,125"></polygon><text fill="#0A0F1E" font-family="JetBrains Mono,monospace" font-size="26" font-weight="800" text-anchor="middle" x="200" y="136">&lt;/&gt;</text><path d="M335 130v76" stroke="#F5F7FA" stroke-width="4"></path><circle cx="335" cy="212" fill="#F5F7FA" r="9"></circle></g></svg></figure></div></div>
-<div class="row g-3">
-<div class="col-12 col-sm-6 col-lg-3"><div class="nc-card rv"><h3 data-i18n="acad.c0h">أساسيات البرمجة</h3><p class="mono" data-i18n="acad.c0p">8 أسابيع · مبتدئ</p></div></div>
-<div class="col-12 col-sm-6 col-lg-3"><div class="nc-card rv"><h3 data-i18n="acad.c1h">تطوير الويب</h3><p class="mono" data-i18n="acad.c1p">12 أسبوع · متوسط</p></div></div>
-<div class="col-12 col-sm-6 col-lg-3"><div class="nc-card rv"><h3 data-i18n="acad.c2h">تطبيقات الموبايل</h3><p class="mono" data-i18n="acad.c2p">10 أسابيع · متوسط</p></div></div>
-<div class="col-12 col-sm-6 col-lg-3"><div class="nc-card rv"><div class="num mono" data-n="600">0</div><p data-i18n="acad.grads">خريج من الأكاديمية</p></div></div></div></section>
-<section class="ch ph-p" data-t="مشاريعنا" id="work"><div class="d-flex flex-column gap-3"><div class="k mono rv">08 / WORK</div><h2 class="rv" data-i18n="work.h">مشاريع بنيناها للسوق السعودي.</h2><p class="lead rv" data-i18n="work.l">من الرياض إلى جدة والدمام: تطبيقات ومنصات بواجهة عربية أولاً، ودفع محلي، وتوافق مع متطلبات المملكة.</p></div><div class="flt rv" id="flt" role="group"></div><div class="row g-4" id="wk"></div></section>
-<section class="ch ph-p end" data-t="النهاية" id="end">
-<div class="k mono rv">END / NEW CODE</div>
-<h2 class="rv" data-i18n="end.h">الحكاية دي لسه بتتكتب.</h2>
-<p class="lead rv" data-i18n="end.l">والسطر الجاي ممكن يبقى مشروعك.</p>
-<a class="btn btn-nc" data-i18n="end.btn" href="#hero">اكتب الكود الجديد معنا</a>
-<p class="lead rv mono" style="font-size:15px">[hello@newcode.example] · [+20 000 000 0000]</p></section>
-</main>
-<footer data-i18n="foot">© نيو كود · كل البيانات في هذه الصفحة تجريبية</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="js/script.js"></script></body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+      name="viewport"
+    />
+    <title>نيو كود — كل منتج بيبدأ بسطر واحد</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800&amp;family=JetBrains+Mono:wght@400&amp;display=swap&amp;family=Montserrat:wght@500;700;800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+      id="bs"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="ctl">
+      <button class="btn btn-sm btn-outline-light" id="lb" type="button">
+        EN</button
+      ><button
+        aria-pressed="false"
+        class="btn btn-sm btn-outline-light nudge"
+        id="sb"
+        type="button"
+      >
+        ♪ <span>موسيقى</span>
+      </button>
+    </div>
+    <div class="top" id="bar"></div>
+    <nav aria-label="الفصول" class="side-nav" id="nav"></nav>
+    <header data-t="البداية" id="hero">
+      <div class="stick">
+        <div aria-hidden="true" class="fg">
+          <span style="--x: 6%; --y: 16%; --d: -0s">{ }</span
+          ><span style="--x: 82%; --y: 12%; --d: -0.9s">&lt;/&gt;</span
+          ><span style="--x: 14%; --y: 70%; --d: -1.8s">#</span
+          ><span style="--x: 88%; --y: 66%; --d: -2.7s">( )</span
+          ><span style="--x: 46%; --y: 8%; --d: -3.6s">=&gt;</span
+          ><span style="--x: 30%; --y: 86%; --d: -4.5s">[ ]</span
+          ><span style="--x: 70%; --y: 88%; --d: -5.4s">;</span
+          ><span style="--x: 92%; --y: 40%; --d: -6.3s">&amp;&amp;</span>
+        </div>
+        <svg aria-label="شعار نيو كود" role="img" viewBox="0 0 400 200">
+          <g id="mk">
+            <path
+              d="M40 170V30L110 170V30"
+              fill="none"
+              stroke="#F5F7FA"
+              stroke-linejoin="miter"
+              stroke-width="22"
+            ></path>
+            <circle
+              cx="250"
+              cy="100"
+              fill="none"
+              id="cc"
+              r="70"
+              stroke="#FFB000"
+              stroke-width="22"
+            ></circle>
+            <text
+              class="mono"
+              direction="ltr"
+              fill="#FFB000"
+              font-size="34"
+              id="tg"
+              style="font-family: &quot;JetBrains Mono&quot;, monospace"
+              text-anchor="middle"
+              x="250"
+              y="112"
+            >
+              &lt;/&gt;
+            </text>
+          </g>
+        </svg>
+        <div class="say">
+          <div class="on" data-i18n="say0"><b>كل منتج</b> بيبدأ بسطر واحد.</div>
+          <div data-i18n="say1">ده مش مجرد شعار.<br /><b>ده باب.</b></div>
+          <div data-i18n="say2">تعالَ نحكي لك <b>الحكاية.</b></div>
+        </div>
+        <div class="cta">
+          <a class="btn-nc" data-i18n="hero.cta1" href="#work">شوف أعمالنا</a>
+          <a class="btn-ghost" data-i18n="hero.cta2" href="#end">ابدأ مشروعك</a>
+        </div>
+      </div>
+    </header>
+    <div aria-hidden="true" class="mq">
+      <div class="mq-t" data-i18n="mq">
+        فكرة ✦ تصميم ✦ كود ✦ إبداع ✦ منتج ✦ فكرة ✦ تصميم ✦ كود ✦ إبداع ✦ منتج ✦
+        فكرة ✦ تصميم ✦ كود ✦ إبداع ✦ منتج ✦ فكرة ✦ تصميم ✦ كود ✦ إبداع ✦ منتج ✦
+        فكرة ✦ تصميم ✦ كود ✦ إبداع ✦ منتج ✦ فكرة ✦ تصميم ✦ كود ✦ إبداع ✦ منتج ✦
+      </div>
+    </div>
+    <main>
+      <section class="ch ph-w" data-t="ثقافتنا" id="culture">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7 d-flex flex-column gap-3">
+            <div class="k mono rv">01 / CULTURE</div>
+            <h2 class="rv" data-i18n="culture.h">إحنا بنشتغل إزاي مع بعض؟</h2>
+          </div>
+          <div class="col-lg-5">
+            <figure class="art rv">
+              <svg aria-label="فكرة" role="img" viewBox="0 0 400 320">
+                <g
+                  class="pu"
+                  stroke="#FFB000"
+                  stroke-linecap="round"
+                  stroke-width="4"
+                >
+                  <path
+                    d="M200 14v28M92 56l20 20M308 56l-20 20M56 150h30M314 150h30"
+                  ></path>
+                </g>
+                <path
+                  class="dr"
+                  d="M200 70c-52 0-84 36-84 80 0 30 16 48 34 66 8 8 12 18 12 30h76c0-12 4-22 12-30 18-18 34-36 34-66 0-44-32-80-84-80z"
+                  fill="none"
+                  stroke="#F5F7FA"
+                  stroke-width="4"
+                ></path>
+                <rect
+                  fill="#2a3d66"
+                  height="12"
+                  rx="6"
+                  width="72"
+                  x="164"
+                  y="250"
+                ></rect>
+                <rect
+                  fill="#2a3d66"
+                  height="12"
+                  rx="6"
+                  width="56"
+                  x="172"
+                  y="270"
+                ></rect>
+                <text
+                  class="fl"
+                  fill="#FFB000"
+                  font-family="JetBrains Mono,monospace"
+                  font-size="54"
+                  font-weight="800"
+                  text-anchor="middle"
+                  x="200"
+                  y="168"
+                >
+                  &lt;/&gt;
+                </text>
+              </svg>
+            </figure>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="nc-card rv">
+              <h3 class="mono" data-i18n="culture.c0h">
+                // نختبر قبل ما نسلّم
+              </h3>
+              <p data-i18n="culture.c0p">
+                مفيش حاجة توصل للعميل إلا بعد ما نكسرها إحنا الأول.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="nc-card rv">
+              <h3 class="mono" data-i18n="culture.c1h">// الصراحة أول</h3>
+              <p data-i18n="culture.c1p">
+                لو فيه مشكلة، العميل يعرفها منا قبل ما يكتشفها.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="nc-card rv">
+              <h3 class="mono" data-i18n="culture.c2h">// نتعلم كل يوم</h3>
+              <p data-i18n="culture.c2p">
+                ساعة أسبوعياً لتجربة تقنية جديدة بدون ضغط تسليم.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="nc-card rv">
+              <h3 class="mono" data-i18n="culture.c3h">// الكود بيتراجع</h3>
+              <p data-i18n="culture.c3p">
+                كل سطر يتراجع عليه زميل قبل الدمج. مفيش بطل واحد.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ch ph-p" data-t="مشاريعنا" id="work">
+        <div class="d-flex flex-column gap-3">
+          <div class="k mono rv">02 / WORK</div>
+          <h2 class="rv" data-i18n="work.h">مشاريع صمّمناها وبنيناها.</h2>
+          <p class="lead rv" data-i18n="work.l">
+            أنظمة جامعية ونقاط بيع ومتاجر إلكترونية ومنصات تعليمية وتطبيقات
+            موبايل في التقنية المالية والمطاعم والموارد البشرية والخدمات عند
+            الطلب، بتصميم عربي أولاً للسعودية ومصر. اضغط على أي مشروع لتفتحه.
+          </p>
+        </div>
+        <div class="flt rv" id="flt" role="group"></div>
+        <div class="row g-4" id="wk"></div>
+      </section>
+      <section class="ch ph-c" data-t="كيف نعمل" id="process">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7 d-flex flex-column gap-3">
+            <div class="k mono rv">03 / PROCESS</div>
+            <h2 class="rv" data-i18n="process.h">
+              كل مشروع بيعدي بنفس الطريق.
+            </h2>
+          </div>
+          <div class="col-lg-5">
+            <figure class="art rv">
+              <svg aria-label="رحلة" role="img" viewBox="0 0 400 320">
+                <path
+                  d="M30 270C100 270 90 120 170 140S250 260 300 150 340 70 360 60"
+                  fill="none"
+                  stroke="#FFB000"
+                  stroke-dasharray="8 10"
+                  stroke-width="3"
+                ></path>
+                <g fill="#F5F7FA">
+                  <circle cx="30" cy="270" r="9"></circle>
+                  <circle cx="90" cy="200" r="9"></circle>
+                  <circle cx="170" cy="140" r="9"></circle>
+                  <circle cx="240" cy="228" r="9"></circle>
+                </g>
+                <circle cx="300" cy="150" fill="#FFB000" r="9"></circle>
+                <g class="fl">
+                  <path
+                    d="M335 78L395 38L368 100L354 82Z"
+                    fill="#F5F7FA"
+                  ></path>
+                  <path
+                    d="M354 82L395 38"
+                    stroke="#0A0F1E"
+                    stroke-width="2"
+                  ></path>
+                </g>
+              </svg>
+            </figure>
+          </div>
+        </div>
+        <div class="tl" id="tl"></div>
+      </section>
+      <section class="ch ph-c" data-t="خدماتنا" id="services">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7 d-flex flex-column gap-3">
+            <div class="k mono rv">04 / SERVICES</div>
+            <h2 class="rv" data-i18n="services.h">وده اللي نقدر نبنيه لك.</h2>
+          </div>
+          <div class="col-lg-5">
+            <figure class="art rv">
+              <svg aria-label="مكعبات" role="img" viewBox="0 0 400 320">
+                <defs>
+                  <g id="cb">
+                    <polygon
+                      fill="#FFB000"
+                      points="0,0 40,20 0,40 -40,20"
+                    ></polygon>
+                    <polygon
+                      fill="#1B2A47"
+                      points="-40,20 0,40 0,85 -40,65"
+                    ></polygon>
+                    <polygon
+                      fill="#2a3d66"
+                      points="40,20 0,40 0,85 40,65"
+                    ></polygon>
+                  </g>
+                </defs>
+                <use class="fl" href="#cb" x="110" y="170"></use>
+                <use
+                  class="fl"
+                  href="#cb"
+                  style="animation-delay: -1.6s"
+                  x="200"
+                  y="120"
+                ></use>
+                <use
+                  class="fl"
+                  href="#cb"
+                  style="animation-delay: -3.2s"
+                  x="290"
+                  y="70"
+                ></use>
+                <text
+                  class="pu"
+                  fill="#F5F7FA"
+                  font-family="JetBrains Mono,monospace"
+                  font-size="36"
+                  text-anchor="middle"
+                  x="200"
+                  y="40"
+                >
+                  &lt;/&gt;
+                </text>
+              </svg>
+            </figure>
+          </div>
+        </div>
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="term mono rv" data-type="1" id="term"></div>
+          </div>
+          <div class="col-lg-6"><div class="row g-3" id="svc"></div></div>
+        </div>
+      </section>
+      <section class="ch ph-p" data-t="خبرتنا" id="exp">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7 d-flex flex-column gap-3">
+            <div class="k mono rv">05 / EXPERTISE</div>
+            <h2 class="rv" data-i18n="exp.h">الأرقام اللي بتتكلم.</h2>
+          </div>
+          <div class="col-lg-5">
+            <figure class="art rv">
+              <svg aria-label="مدارات" role="img" viewBox="0 0 400 320">
+                <g
+                  class="sp"
+                  fill="none"
+                  stroke="#2a3d66"
+                  stroke-width="2"
+                  style="transform-origin: 200px 160px"
+                >
+                  <ellipse cx="200" cy="160" rx="150" ry="55"></ellipse>
+                  <ellipse
+                    cx="200"
+                    cy="160"
+                    rx="150"
+                    ry="55"
+                    transform="rotate(60 200 160)"
+                  ></ellipse>
+                  <ellipse
+                    cx="200"
+                    cy="160"
+                    rx="150"
+                    ry="55"
+                    transform="rotate(-60 200 160)"
+                  ></ellipse>
+                  <circle
+                    cx="350"
+                    cy="160"
+                    fill="#FFB000"
+                    r="9"
+                    stroke="none"
+                  ></circle>
+                  <circle
+                    cx="125"
+                    cy="30"
+                    fill="#F5F7FA"
+                    r="9"
+                    stroke="none"
+                    transform="rotate(0)"
+                  ></circle>
+                  <circle
+                    cx="125"
+                    cy="290"
+                    fill="#FFB000"
+                    r="9"
+                    stroke="none"
+                  ></circle>
+                </g>
+                <circle cx="200" cy="160" fill="#FFB000" r="26"></circle>
+              </svg>
+            </figure>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="nc-card rv">
+              <div class="num mono" data-n="48">0</div>
+              <p data-i18n="exp.p0">مشروع تم تسليمه</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="nc-card rv">
+              <div class="num mono" data-n="6">0</div>
+              <p data-i18n="exp.p1">سنوات خبرة</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="nc-card rv">
+              <div class="num mono" data-n="25">0</div>
+              <p data-i18n="exp.p2">مهندس ومصمم</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="nc-card rv">
+              <div class="num mono" data-n="97">0</div>
+              <p data-i18n="exp.p3">% عملاء كرروا التعامل</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ch ph-p" data-t="عملاؤنا" id="clients">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7 d-flex flex-column gap-3">
+            <div class="k mono rv">06 / CLIENTS</div>
+          </div>
+          <div class="col-lg-5">
+            <figure class="art rv">
+              <svg aria-label="ثقة" role="img" viewBox="0 0 400 320">
+                <circle
+                  cx="160"
+                  cy="160"
+                  fill="#FFB000"
+                  fill-opacity=".15"
+                  r="86"
+                  stroke="#FFB000"
+                  stroke-width="4"
+                ></circle>
+                <circle
+                  cx="240"
+                  cy="160"
+                  fill="#F5F7FA"
+                  fill-opacity=".1"
+                  r="86"
+                  stroke="#F5F7FA"
+                  stroke-width="4"
+                ></circle>
+                <path
+                  class="dr"
+                  d="M176 162l20 20 34-42"
+                  fill="none"
+                  stroke="#F5F7FA"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="10"
+                ></path>
+                <circle
+                  class="fl"
+                  cx="60"
+                  cy="60"
+                  fill="#FFB000"
+                  r="8"
+                ></circle>
+                <circle
+                  class="fl"
+                  cx="345"
+                  cy="265"
+                  fill="#F5F7FA"
+                  r="12"
+                  style="animation-delay: -2s"
+                ></circle>
+              </svg>
+            </figure>
+          </div>
+        </div>
+        <div class="net rv" id="net"></div>
+      </section>
+      <section class="ch ph-p" data-t="الأكاديمية" id="acad">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7 d-flex flex-column gap-3">
+            <div class="k mono rv">07 / ACADEMY</div>
+            <h2 class="rv" data-i18n="acad.h">
+              ومش بنبني منتجات بس.
+              <span style="color: var(--amber)">بنبني مبرمجين.</span>
+            </h2>
+          </div>
+          <div class="col-lg-5">
+            <figure class="art rv">
+              <svg aria-label="تخرج" role="img" viewBox="0 0 400 320">
+                <g class="fl">
+                  <path
+                    d="M112 150v58c0 22 176 22 176 0v-58l-88 36z"
+                    fill="#1B2A47"
+                    stroke="#2a3d66"
+                    stroke-width="3"
+                  ></path>
+                  <polygon
+                    fill="#FFB000"
+                    points="200,70 345,125 200,182 55,125"
+                  ></polygon>
+                  <text
+                    fill="#0A0F1E"
+                    font-family="JetBrains Mono,monospace"
+                    font-size="26"
+                    font-weight="800"
+                    text-anchor="middle"
+                    x="200"
+                    y="136"
+                  >
+                    &lt;/&gt;
+                  </text>
+                  <path
+                    d="M335 130v76"
+                    stroke="#F5F7FA"
+                    stroke-width="4"
+                  ></path>
+                  <circle cx="335" cy="212" fill="#F5F7FA" r="9"></circle>
+                </g>
+              </svg>
+            </figure>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="nc-card rv">
+              <h3 data-i18n="acad.c0h">أساسيات البرمجة</h3>
+              <p class="mono" data-i18n="acad.c0p">8 أسابيع · مبتدئ</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="nc-card rv">
+              <h3 data-i18n="acad.c1h">تطوير الويب</h3>
+              <p class="mono" data-i18n="acad.c1p">12 أسبوع · متوسط</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="nc-card rv">
+              <h3 data-i18n="acad.c2h">تطبيقات الموبايل</h3>
+              <p class="mono" data-i18n="acad.c2p">10 أسابيع · متوسط</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="nc-card rv">
+              <div class="num mono" data-n="600">0</div>
+              <p data-i18n="acad.grads">خريج من الأكاديمية</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ch ph-p end" data-t="النهاية" id="end">
+        <div class="k mono rv">END / NEW CODE</div>
+        <h2 class="rv" data-i18n="end.h">الحكاية دي لسه بتتكتب.</h2>
+        <p class="lead rv" data-i18n="end.l">والسطر الجاي ممكن يبقى مشروعك.</p>
+        <a class="btn btn-nc" data-i18n="end.btn" href="#hero"
+          >اكتب الكود الجديد معنا</a
+        >
+        <div class="contact rv">
+          <a
+            class="ct"
+            href="https://wa.me/201029147032"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <b data-i18n="contact.wa">واتساب</b>
+            <span class="mono">01029147032</span>
+          </a>
+          <a class="ct" href="tel:+201029147032">
+            <b data-i18n="contact.call">اتصال</b>
+            <span class="mono">01029147032</span>
+          </a>
+          <a class="ct" href="mailto:contact.newcodeacademy@gmail.com">
+            <b data-i18n="contact.mail">إيميل</b>
+            <span class="mono">contact.newcodeacademy@gmail.com</span>
+          </a>
+        </div>
+
+        <form class="cform rv" id="cf" novalidate>
+          <h3 data-i18n="form.h">أو ابعتلنا رسالة</h3>
+          <div class="cf-row">
+            <label class="cf-f">
+              <span data-i18n="form.name">الاسم</span>
+              <input
+                autocomplete="name"
+                dir="auto"
+                name="name"
+                required
+                type="text"
+              />
+            </label>
+            <label class="cf-f">
+              <span data-i18n="form.phone">رقم الموبايل</span>
+              <input
+                autocomplete="tel"
+                dir="auto"
+                inputmode="tel"
+                name="phone"
+                required
+                type="tel"
+              />
+            </label>
+          </div>
+          <div class="cf-row">
+            <label class="cf-f">
+              <span data-i18n="form.email">الإيميل (اختياري)</span>
+              <input
+                autocomplete="email"
+                dir="auto"
+                name="email"
+                type="email"
+              />
+            </label>
+            <label class="cf-f">
+              <span data-i18n="form.service">محتاج إيه؟</span>
+              <select name="service" required>
+                <option data-i18n="form.s0" disabled selected value="">
+                  اختر الخدمة
+                </option>
+                <option data-i18n="form.s1">تطبيق موبايل</option>
+                <option data-i18n="form.s2">موقع أو متجر إلكتروني</option>
+                <option data-i18n="form.s3">نظام أو داشبورد</option>
+                <option data-i18n="form.s4">تصميم UI/UX</option>
+                <option data-i18n="form.s5">حاجة تانية</option>
+              </select>
+            </label>
+          </div>
+          <label class="cf-f">
+            <span data-i18n="form.msg">رسالتك</span>
+            <textarea
+              data-i18n-ph="form.msg.ph"
+              dir="auto"
+              name="message"
+              placeholder="احكيلنا عن فكرتك في كام سطر"
+              required
+              rows="4"
+            ></textarea>
+          </label>
+          <input
+            aria-hidden="true"
+            autocomplete="off"
+            class="hp"
+            name="botcheck"
+            tabindex="-1"
+            type="checkbox"
+          />
+          <button class="btn-nc" data-i18n="form.send" type="submit">
+            ابعت الرسالة
+          </button>
+          <p
+            aria-live="polite"
+            class="cf-status"
+            id="cf-status"
+            role="status"
+          ></p>
+        </form>
+      </section>
+    </main>
+    <footer data-i18n="foot">
+      © نيو كود · كل البيانات في هذه الصفحة تجريبية
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Plain scripts (no build step). Order matters: data first, main last. -->
+    <script src="js/data/strings.js"></script>
+    <script src="js/data/content.js"></script>
+    <script src="js/data/config.js"></script>
+    <script src="js/data/projects.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/terminal.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
