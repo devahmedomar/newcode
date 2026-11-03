@@ -62,5 +62,5 @@ NC.englishStrings = {
   "form.msg": "Your message",
   "form.msg.ph": "Tell us about your idea in a few lines",
   "form.send": "Send message",
-  foot: "© New Code · All data on this page is placeholder",
+  foot: "© New Code Academy · All rights reserved",
 };

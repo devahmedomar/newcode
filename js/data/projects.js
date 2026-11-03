@@ -25,7 +25,7 @@ NC.projectCategories = [
   {
     id: "mobile",
     label: {
-      ar: "تطبيقات الموبايل",
+      ar: "تطبيقات الجوال",
       en: "Mobile Apps",
     },
   },
@@ -179,11 +179,11 @@ NC.projects = [
       en: "Wakkt — Employee Verification Platform",
     },
     sector: {
-      ar: "موارد بشرية · موبايل وديسكتوب",
+      ar: "موارد بشرية · جوال وديسكتوب",
       en: "HR tech · Mobile & desktop",
     },
     imageAlt: {
-      ar: "لوحة الحضور على الديسكتوب والتحقق من هوية الموظف على الموبايل",
+      ar: "لوحة الحضور على الديسكتوب والتحقق من هوية الموظف على الجوال",
       en: "Attendance dashboard on desktop and employee ID verification on mobile",
     },
     description: {
@@ -191,7 +191,7 @@ NC.projects = [
       en: "Employee identification and verification platform with attendance tracking, productivity insights, and secure data protection.",
     },
     tags: {
-      ar: ["تصميم UI/UX", "موبايل", "ديسكتوب"],
+      ar: ["تصميم UI/UX", "جوال", "ديسكتوب"],
       en: ["UI/UX Design", "Mobile", "Desktop"],
     },
   },
@@ -243,7 +243,7 @@ NC.projects = [
       en: "Multi-role app where admins manage operations, teachers report on children’s progress, and parents follow their child’s day.",
     },
     tags: {
-      ar: ["تصميم UI/UX", "متعدد الأدوار", "موبايل"],
+      ar: ["تصميم UI/UX", "متعدد الأدوار", "جوال"],
       en: ["UI/UX Design", "Multi-role", "Mobile"],
     },
   },
@@ -279,23 +279,23 @@ NC.projects = [
     image: "arabic-app",
     category: "mobile",
     name: {
-      ar: "Arabic App — تطبيق موبايل",
+      ar: "Arabic App — تطبيق جوال",
       en: "Arabic App — Mobile App",
     },
     sector: {
-      ar: "تطبيق موبايل · كود مفتوح",
+      ar: "تطبيق جوال · كود مفتوح",
       en: "Mobile app · Open source",
     },
     imageAlt: {
-      ar: "شاشتا تطبيق موبايل بواجهة عربية",
+      ar: "شاشتا تطبيق جوال بواجهة عربية",
       en: "Two screens of a mobile app with an Arabic interface",
     },
     description: {
-      ar: "تطبيق موبايل بواجهة عربية. الكود المصدري متاح على GitHub.",
+      ar: "تطبيق جوال بواجهة عربية. الكود المصدري متاح على GitHub.",
       en: "A mobile app with an Arabic interface. The source code is available on GitHub.",
     },
     tags: {
-      ar: ["تطبيق موبايل", "GitHub", "كود مفتوح"],
+      ar: ["تطبيق جوال", "GitHub", "كود مفتوح"],
       en: ["Mobile app", "GitHub", "Open source"],
     },
   },
@@ -347,7 +347,7 @@ NC.projects = [
       en: "University student transportation app for route selection, subscription management, digital payment receipts, and approval notifications.",
     },
     tags: {
-      ar: ["تصميم UI/UX", "موبايل", "اشتراكات"],
+      ar: ["تصميم UI/UX", "جوال", "اشتراكات"],
       en: ["UI/UX Design", "Mobile", "Subscriptions"],
     },
   },
@@ -399,7 +399,7 @@ NC.projects = [
       en: "Natural products store with personalized recommendations, secure payments, and delivery.",
     },
     tags: {
-      ar: ["تصميم UI/UX", "موبايل", "تجارة إلكترونية"],
+      ar: ["تصميم UI/UX", "جوال", "تجارة إلكترونية"],
       en: ["UI/UX Design", "Mobile", "E-commerce"],
     },
   },
@@ -425,7 +425,7 @@ NC.projects = [
       en: "Laundry service app for clothes, carpets, and car cleaning.",
     },
     tags: {
-      ar: ["تصميم UI/UX", "موبايل", "عند الطلب"],
+      ar: ["تصميم UI/UX", "جوال", "عند الطلب"],
       en: ["UI/UX Design", "Mobile", "On-demand"],
     },
   },
@@ -451,7 +451,7 @@ NC.projects = [
       en: "Home and car cleaning apps that cover ordering through service completion.",
     },
     tags: {
-      ar: ["تصميم UI/UX", "موبايل", "عند الطلب"],
+      ar: ["تصميم UI/UX", "جوال", "عند الطلب"],
       en: ["UI/UX Design", "Mobile", "On-demand"],
     },
   },
